@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ChainId, DAppProvider } from '@usedapp/core';
+
+const config = {
+    readOnlyChainId: ChainId.Mainnet,
+    readOnlyUrls: {
+        [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/3165a249c65f4198bf57200109b8fadf',
+    },
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <DAppProvider config={config}>
+          <App />
+      </DAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
