@@ -11,7 +11,7 @@
   "dependencies": {
     "@usedapp/core": "^0.7.3",
     "file-loader": "^6.2.0",
-    "nucypher-ts": "0.4.3",
+    "nucypher-ts": "0.4.4",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
