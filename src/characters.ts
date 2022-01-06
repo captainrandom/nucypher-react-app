@@ -1,5 +1,5 @@
 import {Alice, Bob, RemoteBob} from "nucypher-ts";
-import {Web3Provider} from "@ethersproject/providers";
+import type {Web3Provider} from "@ethersproject/providers";
 
 const config = {
     // Public Porter endpoint on Lynx network
